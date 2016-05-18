@@ -50,4 +50,10 @@
 -(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
     [SVProgressHUD showErrorWithStatus:@"网络错误，请重新加载。。。"];
 }
+
+- (BOOL)prefersStatusBarHidden{
+
+    return YES;
+}
+
 @end
